@@ -1,0 +1,154 @@
+body {
+  background-color: rgb(40, 170, 213);
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  line-height: 1.5;
+}
+
+h1 {
+  text-align: center;
+  margin: 0rem;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* Play area */
+.game-board {
+  position: relative;
+  margin: 0 auto;
+  width: 550px;
+  height: 550px;
+  background-image: url("../images/background-image.png");
+  border-radius: 10px;
+}
+
+/* dice */
+
+.computer-dice {
+  text-align: center;
+}
+
+.player-dice {
+  text-align: center;
+}
+
+.computer-dice img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+.player-dice img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+/* game control buttons */
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.roll-dice-button,
+.try-again-button {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.roll-dice-button:hover,
+.try-again-button:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.roll-dice-button:active,
+.try-again-button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.scores {
+  color: white;
+  font-weight: bolder;
+  margin: 0.5rem auto;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.scores section {
+  background-color: rgba(0, 128, 0, 0.5);
+  border-radius: 20%;
+  padding: 0.2rem 0.5rem;
+}
+
+.scores section h3 {
+  text-align: center;
+  margin: 0.5rem 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.scores section p {
+  text-align: center;
+  margin: 0.5rem 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.computer-score-round-1 {
+  text-align: center;
+}
+
+.player-score-round-1 {
+  text-align: center;
+}
+
+.computer-total-score {
+  text-align: center;
+}
+
+.player-total-score {
+  text-align: center;
+}
+
+/* WINNER */
+.computer-wins,
+.player-wins,
+.no-winner {
+  color: white;
+  background-color: rgba(165, 42, 42, 0.7);
+  margin: 0.5rem 0;
+}
+
+/* FOOTER */
+
+.footer {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0 auto;
+  font-size: 0.75rem;
+}

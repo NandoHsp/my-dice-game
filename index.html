@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nando's Dice Game</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/normalize-fwd.css">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+
+    <body>
+
+
+        <h1>Roll the dice</h1>
+
+        <div class="game-board">
+
+            <div class="dice">    
+                <section class="computer-dice">
+                <h2>House</h2>                  
+                    <img src="images/dice1.svg" alt="dice 1" class="dice-1">
+                    <img src="images/dice2.svg" alt="dice 2" class="dice-2">
+                </section>
+
+                
+                <section class="player-dice">
+                <h2>Player</h2>
+                    <img src="images/dice1.svg" alt="dice 1" class="dice-1">
+                    <img src="images/dice2.svg" alt="dice 2" class="dice-2">
+                </section>
+            </div>
+
+
+
+            <div class="buttons">
+                <button class="roll-dice-button" id="roll-dice-button" type="button">Roll Dice</button>
+                         
+                <button class="try-again-button" id="try-again-button" type="button" style="display: none;">Try Again</button>
+            </div>
+
+            <div class="computer-wins" style="display: none;">
+                <h1>House wins!</h1>
+            </div>
+            <div class="player-wins" style="display: none;">
+                <h1>Player wins!</h1>
+            </div>
+            <div class="no-winner" style="display: none;">
+                <h1>It's a tie!</h1>
+            </div>
+
+
+                        
+            
+            <!-- <div class="scores" id="scores">
+                <section>
+                <h3 id="computer-round-1">House Score</h3>
+                <p class="computer-score-round-1" id="computer-score-this-round">0</p>                                
+                      
+                <h3 id="player-round-1">Player Score</h3>
+                <p class="player-score-round-1" id="player-score-this-round">0</p>
+                </section>
+
+                <section>            
+                <h3>House Total score</h3>
+                <p class="computer-total-score" id="computer-total-score">0</p>
+
+                <h3>Player total Score</h3>
+                <p class="player-total-score" id="player-total-score">0</p>
+                </section>
+            </div>  -->
+
+            <div class="scores" id="scores">
+                <section>
+                <h3 id="computer-round-1">House</h3>
+                <p class="computer-score-round-1" id="computer-score-this-round">0</p>   
+                
+                <h3>Total score</h3>
+                <p class="computer-total-score" id="computer-total-score">0</p>
+                      
+                
+                </section>
+
+                <section>            
+                <h3 id="player-round-1">Player</h3>
+                <p class="player-score-round-1" id="player-score-this-round">0</p>
+
+                <h3>Total Score</h3>
+                <p class="player-total-score" id="player-total-score">0</p>
+                </section>
+            </div> 
+         
+        </div>        
+      
+
+        <footer class="footer">
+            <p>Background image by <a href="https://pixabay.com/users/mjcouch-1930986/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1224242">Mikki Couch</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1224242">Pixabay</a>Unsplash</a>
+            </p>
+            <p>Dice svg's from Wikipedia Commons</p>
+            <p>&copy;Nando H. 2023 - For education purposes only.</p>
+        </footer>
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+
+   
+</html>
+
+
+
